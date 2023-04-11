@@ -8,6 +8,7 @@ using GProject.WebApplication.Models;
 using GProject.WebApplication.Helpers;
 using GProject.Data.DomainClass;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Newtonsoft.Json;
 
 namespace GProject.WebApplication.Controllers
 {
@@ -203,6 +204,207 @@ namespace GProject.WebApplication.Controllers
         {
             Commons.mylocalhost = str + "/api/";
             return Ok();
+        }
+
+
+        [HttpGet]
+        [Route("Thong-tin-khach-hang.html", Name = ("ProfileCustomer"))]
+        public async Task<ActionResult> UpdateProfileCustomer()
+        {
+
+            var customer = HttpContext.Session.GetObjectFromJson<Customer>("userLogin");
+
+            if (customer == null)
+            {
+                return RedirectToAction("Index", "Login");
+            }
+            var lstCustomer = await Commons.GetAll<Customer>(String.Concat(Commons.mylocalhost, "Customer/get-all-Customer"));
+            var dataCustomer = lstCustomer.FirstOrDefault(c => c.Id == customer.Id);
+
+            var userProfile = new UserProfileDTO()
+            {
+                Image = dataCustomer.Image,
+                Name = dataCustomer.Name,
+                Email = dataCustomer.Email,
+                DateOfBirth = dataCustomer.DateOfBirth,
+                PhoneNumber = dataCustomer.PhoneNumber,
+                Address = dataCustomer.Address
+            };
+            return View(userProfile);
+        }
+        [HttpPost]
+        [Route("Thong-tin-khach-hang.html", Name = ("ProfileCustomer"))]
+        public async Task<ActionResult> UpdateProfileCustomer(UserProfileDTO user)
+        {
+            var customer = HttpContext.Session.GetObjectFromJson<Customer>("userLogin");
+            if (user.Image_Upload != null)
+            {
+                string full_path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", user.Image_Upload.FileName);
+                using (var file = new FileStream(full_path, FileMode.Create))
+                {
+                    user.Image_Upload.CopyTo(file);
+                }
+                customer.Image = user.Image_Upload.FileName;
+            }
+            else
+            {
+                customer.Image = customer.Image;
+            }
+            customer.Name = user.Name;
+            customer.Email = user.Email;
+            customer.DateOfBirth = user.DateOfBirth;
+            customer.PhoneNumber = user.PhoneNumber;
+            customer.Address = user.Address;
+            customer.UpdateDate = DateTime.Now;
+            string url = Commons.mylocalhost + "Customer/update-Customer";
+            //Gửi request cho API để cập nhập thông tin
+            bool result = await Commons.Add_or_UpdateAsync(customer, url);
+            if (!result)
+            {
+                HttpContext.Session.SetString("mess", "Failed");
+            }
+            else
+            {
+                // Lưu thông tin người dùng mới vào session
+                HttpContext.Session.SetString("userLogin", JsonConvert.SerializeObject(customer));
+                HttpContext.Session.SetString("mess", "Success");
+            }
+            return RedirectToAction("Index", "Product");
+        }
+
+        [HttpGet]
+        [Route("Thong-tin-nhan-vien.html", Name = ("ProfileEmployee"))]
+        public async Task<ActionResult> UpdateProfileEmployee()
+        {
+            var employee = HttpContext.Session.GetObjectFromJson<Employee>("userLogin");
+
+            if (employee == null)
+            {
+                return RedirectToAction("Index", "Login");
+            }
+            var lstEmployee = await Commons.GetAll<Customer>(String.Concat(Commons.mylocalhost, "Employee/get-all-Employee"));
+            var dataEmployee = lstEmployee.FirstOrDefault(c => c.Id == employee.Id);
+
+            var userProfile = new UserProfileDTO()
+            {
+                Image = dataEmployee.Image,
+                Name = dataEmployee.Name,
+                Email = dataEmployee.Email,
+                DateOfBirth = dataEmployee.DateOfBirth,
+                PhoneNumber = dataEmployee.PhoneNumber,
+                Address = dataEmployee.Address
+            };
+            return View(userProfile);
+        }
+        [HttpPost]
+        [Route("Thong-tin-nhan-vien.html", Name = ("ProfileEmployee"))]
+        public async Task<ActionResult> UpdateProfileEmployee(UserProfileDTO user)
+        {
+            var employee = HttpContext.Session.GetObjectFromJson<Employee>("userLogin");
+            if (user.Image_Upload != null)
+            {
+                string full_path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", user.Image_Upload.FileName);
+                using (var file = new FileStream(full_path, FileMode.Create))
+                {
+                    user.Image_Upload.CopyTo(file);
+                }
+                employee.Image = user.Image_Upload.FileName;
+            }
+            else
+            {
+                employee.Image = employee.Image;
+            }
+            employee.Name = user.Name;
+            employee.Email = user.Email;
+            employee.DateOfBirth = user.DateOfBirth;
+            employee.PhoneNumber = user.PhoneNumber;
+            employee.Address = user.Address;
+            employee.UpdateDate = DateTime.Now;
+            string url = Commons.mylocalhost + "Employee/update-Employee";
+            //Gửi request cho API để cập nhập thông tin
+            bool result = await Commons.Add_or_UpdateAsync(employee, url);
+            if (!result)
+            {
+                HttpContext.Session.SetString("mess", "Failed");
+            }
+            else
+            {
+                // Lưu thông tin người dùng mới vào session
+                HttpContext.Session.SetString("userLogin", JsonConvert.SerializeObject(employee));
+                HttpContext.Session.SetString("mess", "Success");
+            }
+            return RedirectToAction("Index", "Color");
+        }
+
+        [HttpGet]
+        [Route("Doi-mat-khau-khach-hang.html", Name = ("ChangepasswordCustomer"))]
+        public async Task<ActionResult> ChangePasswordCustomer()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [Route("Doi-mat-khau-khach-hang.html", Name = ("ChangepasswordCustomer"))]
+        public async Task<ActionResult> ChangePasswordCustomer(ChangePasswordDTO changePasswordDTO)
+        {
+            var customer = HttpContext.Session.GetObjectFromJson<Customer>("userLogin");
+            if (changePasswordDTO.CurrentPassword != customer.Password)
+            {
+                ViewData["checkCurrentPass"] = "Mật khẩu hiện tại không đúng";
+                return RedirectToAction("ChangePasswordCustomer", "Login");
+            }
+            customer.Password = changePasswordDTO.NewPassword;
+            customer.UpdateDate = DateTime.Now;
+            string url = Commons.mylocalhost + "Customer/update-Customer";
+            //Gửi request cho API để cập nhập thông tin
+            bool result = await Commons.Add_or_UpdateAsync(customer, url);
+            if (!result)
+            {
+                HttpContext.Session.SetString("mess", "Failed");
+            }
+            else
+            {
+                // Lưu thông tin người dùng mới vào session
+                HttpContext.Session.SetString("userLogin", JsonConvert.SerializeObject(customer));
+                HttpContext.Session.SetString("mess", "Success");
+            }
+            return RedirectToAction("Index", "Product");
+        }
+
+        [HttpGet]
+        [Route("Doi-mat-khau-nhan-vien.html", Name = ("ChangepasswordEmployee"))]
+        public async Task<ActionResult> ChangePasswordEmployee()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [Route("Doi-mat-khau-nhan-vien.html", Name = ("ChangepasswordEmployee"))]
+        public async Task<ActionResult> ChangePasswordEmployee(ChangePasswordDTO changePasswordDTO)
+        {
+            var employee = HttpContext.Session.GetObjectFromJson<Employee>("userLogin");
+            if (changePasswordDTO.CurrentPassword != employee.Password)
+            {
+                ViewData["checkCurrentPass"] = "Mật khẩu hiện tại không đúng";
+                return RedirectToAction("ChangePasswordEmployee", "Login");
+            }
+            employee.Password = changePasswordDTO.NewPassword;
+            employee.UpdateDate = DateTime.Now;
+            string url = Commons.mylocalhost + "Employee/update-Employee";
+            //Gửi request cho API để cập nhập thông tin
+            bool result = await Commons.Add_or_UpdateAsync(employee, url);
+            if (!result)
+            {
+                HttpContext.Session.SetString("mess", "Failed");
+                return RedirectToAction("ChangePasswordEmployee", "Login");
+            }
+            else
+            {
+                // Lưu thông tin người dùng mới vào session
+                HttpContext.Session.SetString("userLogin", JsonConvert.SerializeObject(employee));
+                HttpContext.Session.SetString("mess", "Success");
+            }
+            return RedirectToAction("Index", "Color");
         }
     }
 }

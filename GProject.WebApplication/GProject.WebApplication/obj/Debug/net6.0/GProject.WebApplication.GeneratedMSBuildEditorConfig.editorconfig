@@ -9,117 +9,133 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GProject.WebApplication
 build_property.RootNamespace = GProject.WebApplication
-build_property.ProjectDir = C:\Users\Admin\Documents\GProject\GProject.WebApplication\GProject.WebApplication\
+build_property.ProjectDir = E:\DuAnTotNghiep\GProject.WebApplication\GProject.WebApplication\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Admin\Documents\GProject\GProject.WebApplication\GProject.WebApplication
+build_property.MSBuildProjectDirectory = E:\DuAnTotNghiep\GProject.WebApplication\GProject.WebApplication
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/Brand/Index.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/Brand/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/Color/Index.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/Color/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/Customer/Index.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/Customer/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/Employee/Index.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/Employee/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/Home/Index.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/Home/Privacy.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/Login/AccessDenied.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/Login/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQWNjZXNzRGVuaWVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/Login/Index.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/Login/ChangePasswordCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQ2hhbmdlUGFzc3dvcmRDdXN0b21lci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/Login/ChangePasswordEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQ2hhbmdlUGFzc3dvcmRFbXBsb3llZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/Login/Login.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/Login/Register.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/Login/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/Order/Detail.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/Login/UpdateProfileCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cVXBkYXRlUHJvZmlsZUN1c3RvbWVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/Login/UpdateProfileEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cVXBkYXRlUHJvZmlsZUVtcGxveWVlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/Order/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/Order/Index.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/ProductMGR/Create.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/ProductMGR/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdE1HUlxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/ProductMGR/Index.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/ProductMGR/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdE1HUlxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/ProductMGR/Update.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/ProductMGR/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdE1HUlxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/Product/Index.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/Product/ProductDetail.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/Product/ProductDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQcm9kdWN0RGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/Product/ShowDetailMyCart.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/Product/ShowDetailMyCart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxTaG93RGV0YWlsTXlDYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/Shared/Error.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/Shared/_CommentBox.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/Shared/_CommentBox.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db21tZW50Qm94LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/Size/Index.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/Size/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2l6ZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/_ViewImports.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/_ViewStart.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/Shared/_Layout.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-pysgi1ba85
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/Shared/_LayoutAdmin.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/Shared/_LayoutAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-riymrxyczs
 
-[C:/Users/Admin/Documents/GProject/GProject.WebApplication/GProject.WebApplication/Views/Shared/_LayoutUser.cshtml]
+[E:/DuAnTotNghiep/GProject.WebApplication/GProject.WebApplication/Views/Shared/_LayoutUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-yl17r5jru0

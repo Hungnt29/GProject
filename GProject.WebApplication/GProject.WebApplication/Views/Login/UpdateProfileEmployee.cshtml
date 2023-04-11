@@ -1,0 +1,61 @@
+﻿@model GProject.WebApplication.Models.UserProfileDTO
+
+@{
+    ViewBag.Title = "Thay đổi thông tin";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<form href="/Thong-tin-nhan-vien.html" method="post" enctype="multipart/form-data">
+    <div class="container-xl px-4 mt-4">
+        <hr class="mt-0 mb-4">
+        <div class="row">
+            <div class="col-xl-4">
+                <div class="card mb-4 mb-xl-0">
+                    <div class="card-header">Ảnh đại diện</div>
+                    <div class="card-body text-center">
+                        <img class="img-account-profile rounded-circle mb-2" src="~/images/@Model.Image" alt="" width="110">
+                        <div class="small font-italic text-muted mb-4">Thay ảnh đại diện</div>
+                        <input type="file" class="form-control" asp-for="Image_Upload">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-8">
+                <div class="card mb-4">
+                    <div class="card-header">Thông tin cá nhân</div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="small mb-1" for="inputUsername">Họ và tên</label>
+                            <input class="form-control" type="text" placeholder="Mời nhập họ tên" asp-for="Name">
+                        </div>
+                        <div class="row gx-3 mb-3">
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputFirstName">Email</label>
+                                <input class="form-control" type="text" placeholder="Mời nhập email" asp-for="Email">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputLastName">Ngày sinh</label>
+                                <input class="form-control" type="date" placeholder="Mời nhập ngày sinh" asp-for="DateOfBirth">
+                            </div>
+                        </div>
+                        <div class="row gx-3 mb-3">
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputOrgName">Số điện thoại</label>
+                                <input class="form-control" type="text" placeholder="Mời bạn nhập số điện thoại" asp-for="PhoneNumber">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputLocation">Địa chỉ</label>
+                                <input class="form-control" type="text" placeholder="Mời bạn nhập địa chỉ" asp-for="Address">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4"></div>
+            <div class="col-xl-8">
+                <button class="btn btn-primary">Lưu thay đổi</button>
+            </div>
+        </div>
+    </div>
+</form>
